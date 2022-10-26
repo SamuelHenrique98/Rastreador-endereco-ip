@@ -1,0 +1,25 @@
+.rodape{
+    background-image: url(../../images/pattern-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 42px
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+}
+.attribution a {
+    color:salmon; 
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 769px){
+    .attribution{
+        padding: 15px;
+    }
+}

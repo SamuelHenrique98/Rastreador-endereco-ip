@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+  integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+  
+
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header/cabecalho.css">
+  <link rel="stylesheet" href="./css/main/mapa.css">
+  <link rel="stylesheet" href="./css/footer/rodape.css">
+
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1>
+      IP Address Tracker
+    </h1>
+  
+    <div class="pesquisa">
+      <input type="text" name="search" id="txtpesquisa"/>
+      <button type="submit" class="botao__pesquisa"><img src=".//images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div>
+      <ul class="info">
+        <li class="info__lista">
+          <p class="lista__informacao">IP Address</p>
+          <p class="lista__resposta" id="ip"></p>
+        </li>
+        <li class="info__lista">
+          <p class="lista__informacao">Location</p>
+          <p class="lista__resposta" id="localtion"></p>
+        </li>
+        <li class="info__lista">
+          <p class="lista__informacao">Timezone</p>
+          <p class="lista__resposta" id="timezone"></p>
+        </li>
+        <li class="info__lista">
+          <p class="lista__informacao">ISP</p>
+          <p class="lista__resposta" id="isp"></p>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  <main class="mapa">
+    <div id="map"></div>
+  </main>
+  <footer class="rodape">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/samuelhenriquefs/">Samuel Henrique</a>.
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>

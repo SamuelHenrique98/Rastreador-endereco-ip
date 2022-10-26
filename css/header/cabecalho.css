@@ -1,0 +1,123 @@
+.cabecalho{
+    align-items: center;
+    background-image: url("../../images/pattern-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+}
+
+.cabecalho h1{
+    align-items: center;
+    color: #fff;
+    margin-top: 1.625rem;
+    font-weight: 700;
+}
+
+.pesquisa {
+    border:1px solid #444;
+    border-radius: 9px;
+    height: 1.94rem;
+    margin-top: .95rem;
+    overflow: hidden;
+    width:210px;
+    display: flex;
+}
+
+.pesquisa input {
+    border:0;
+    display:inline-block;
+    height: 75%;
+    padding: 5px 12px;
+    outline:0;
+    width: 80%;
+}
+
+.botao__pesquisa {
+    height: 100%;
+    width: 20%;
+}
+
+.pesquisa .botao__pesquisa {
+    background: #000;
+    border:none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    float:right;
+}
+
+.info{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 235px;
+    position: absolute;
+    top: 23vh;
+    transform: translate(-50%, 0);
+    width: 212px;
+    z-index: 1;
+}
+
+.info__lista{
+    margin: 5px;
+    padding: 6px;
+    text-align: center;
+}
+
+.info__lista:nth-child(1){
+    min-width: 150px;
+}
+.info__lista:nth-child(3){
+    min-width: 60px;
+}
+
+.lista__informacao{
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+}
+
+.lista__resposta{
+    color: hsl(0, 0%, 17%);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 376px) {
+    /* Mexer mais, parte solo */
+    .cabecalho h1{
+        margin-top: 1.65rem;
+    }
+
+    .pesquisa {
+        height: 3rem;
+        width:350px;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .info{
+        align-items:flex-start;
+        flex-direction: row;
+        height: 80px;
+        justify-content: space-around; 
+        position: absolute;
+        text-align: center;
+        width: 800px;
+        word-break: break-word;
+    }
+
+    .info__lista{
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        text-align: start;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .info__lista:last-child{
+        border-right: none;
+    }
+}
